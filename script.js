@@ -9,9 +9,3 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
    that calls https://api.trugen.ai/v1/conversations with your key,
    then mount the returned session into #trugen-mount.
    ============================================================== */
-// Example:
-// document.getElementById('trugen-mount').addEventListener('click', async () => {
-//   const res = await fetch('/api/conversation', { method:'POST' });
-//   const session = await res.json();
-//   // mount TruGen player/iframe with session details here
-// });

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gsansing3commas.github.io/velvette-medspa-lp/sitemap.xml

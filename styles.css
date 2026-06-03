@@ -69,11 +69,6 @@ nav{
 .hero p.lede{font-size:18px;font-weight:300;max-width:500px;color:color-mix(in srgb,var(--ink) 82%,transparent)}
 .hero-cta{display:flex;gap:18px;margin-top:30px;flex-wrap:wrap;align-items:center}
 .hero-note{font-size:13px;opacity:.6}
-.stack-badges{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
-.stack-badges span{
-  font-size:11px;letter-spacing:.18em;text-transform:uppercase;padding:7px 15px;border:1px solid var(--line);
-  border-radius:999px;background:rgba(255,255,255,.45);
-}
 
 /* agent frame */
 .agent-shell{position:relative}
@@ -160,10 +155,6 @@ section{padding:72px 0}
 }
 .step h3{font-size:21px;margin-bottom:10px;color:var(--ivory)}
 .step p{font-size:14.5px;font-weight:300;color:rgba(246,241,232,.72)}
-.step .tag{
-  display:inline-block;margin-top:14px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--gold-soft);border:1px solid rgba(212,176,114,.4);padding:4px 11px;border-radius:999px;
-}
 
 /* features */
 .feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/velvette-medspa-lp/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Velvette — The AI Front Desk for Med Spas</title>
+<meta name="description" content="A lifelike AI video receptionist that answers every inquiry, books consults, and collects deposits — 24/7. Built on TruGen, Cloudflare &amp; PaymeGPT." />
+<meta property="og:title" content="Velvette — The AI Front Desk for Med Spas" />
+<meta property="og:description" content="A lifelike AI video receptionist that answers every inquiry, books consults, and collects deposits — 24/7. Built on TruGen, Cloudflare &amp; PaymeGPT." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Velvette — The AI Front Desk for Med Spas" />
+<meta name="twitter:description" content="A lifelike AI video receptionist that answers every inquiry, books consults, and collects deposits — 24/7. Built on TruGen, Cloudflare &amp; PaymeGPT." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mpykxv64-pjlmq";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4532');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='bmH9eR';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="#">Vel<em>v</em>ette</a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#demo" class="btn btn-gold">Talk to the AI</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <span class="eyebrow">For Med Spas &amp; Aesthetic Clinics</span>
+      <h1>Your front desk just became <em>immortal.</em></h1>
+      <p class="lede">A lifelike AI video receptionist that greets every visitor, answers treatment questions, books consults, and collects deposits — at 2&nbsp;PM or 2&nbsp;AM. No hold music. No missed revenue.</p>
+      <div class="hero-cta">
+        <a href="#demo" class="btn btn-dark">Meet Your Receptionist</a>
+        <a href="#pricing" class="btn btn-ghost">See Pricing</a>
+      </div>
+      <p class="hero-note">Live in 7 days · No new software for your staff · HIPAA-conscious workflows</p>
+      <div class="stack-badges">
+        <span>Powered by TruGen</span><span>Edge-fast on Cloudflare</span><span>Deposits via PaymeGPT</span>
+      </div>
+    </div>
+
+    <div class="agent-shell reveal in" id="demo">
+      <div class="agent-frame">
+        <div class="live-dot"><i></i> Live Agent</div>
+        <div class="pulse"></div><div class="pulse"></div><div class="pulse"></div>
+        <!-- ============================================================
+             TRUGEN EMBED GOES HERE.
+             Replace this placeholder div with your TruGen embed snippet /
+             iframe, or initialize a conversation via your Cloudflare
+             Worker proxy (POST /api/conversation) and mount the stream.
+             ============================================================ -->
+        <div class="agent-placeholder" id="trugen-mount">
+          <div class="orb"></div>
+          <h3>Say hello to Ava</h3>
+          <p>Ask about Botox pricing, book a consult, or hold your spot with a deposit — she handles it all, face-to-face.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Answers in <b>&lt;1 second</b></span><span>Books consults <b>24/7</b></span><span>Collects deposits <b>instantly</b></span><span>Speaks <b>30+ languages</b></span><span>Never calls in sick <b>✦</b></span>
+    <span>Answers in <b>&lt;1 second</b></span><span>Books consults <b>24/7</b></span><span>Collects deposits <b>instantly</b></span><span>Speaks <b>30+ languages</b></span><span>Never calls in sick <b>✦</b></span>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The leak in your funnel</span>
+      <h2>Every missed inquiry is a <em>filler appointment</em> walking out the door.</h2>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="num">62<sup>%</sup></div><p>of after-hours inquiries never get a response — they book with the spa that answered first.</p></div>
+      <div class="stat"><div class="num">$350<sup>+</sup></div><p>average revenue per booked aesthetic appointment your front desk lets slip while juggling check-ins.</p></div>
+      <div class="stat"><div class="num">3<sup>×</sup></div><p>higher show rates when a deposit is collected the moment a consult is booked.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="flow reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>One conversation. From <em style="font-style:italic;color:var(--gold-soft)">"how much is lip filler?"</em> to paid deposit.</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="n">01</span>
+          <h3>She answers, face-to-face</h3>
+          <p>A hyper-real TruGen video agent greets visitors on your site, answers treatment, pricing, and pre-care questions instantly — trained on your menu and your tone.</p>
+          <span class="tag">TruGen Video AI</span>
+        </div>
+        <div class="step">
+          <span class="n">02</span>
+          <h3>She books the consult</h3>
+          <p>Live availability is checked through your booking system and the appointment is locked in mid-conversation. Confirmations go out by text automatically.</p>
+          <span class="tag">Cloudflare Workers</span>
+        </div>
+        <div class="step">
+          <span class="n">03</span>
+          <h3>She collects the deposit</h3>
+          <p>A secure payment link is generated on the spot and sent before the conversation ends. Deposits hit your account; no-shows hit zero.</p>
+          <span class="tag">PaymeGPT</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Built for aesthetics</span>
+      <h2>Polished enough for your brand. <em>Sharp</em> enough for your books.</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal"><div class="glyph">✦</div><h3>Knows your menu cold</h3><p>Tox units, filler syringes, laser packages, membership tiers — trained on your exact pricing and pre/post-care protocols, so answers are yours, not generic.</p></div>
+      <div class="feat reveal"><div class="glyph">✧</div><h3>Velvet-rope escalation</h3><p>Medical questions, complications, or VIP clients get routed to your team instantly — with a full transcript so nobody repeats themselves.</p></div>
+      <div class="feat reveal"><div class="glyph">❋</div><h3>Edge-fast everywhere</h3><p>Hosted on Cloudflare's global network. Your page and your agent load instantly whether the client is in Buckhead or Bali.</p></div>
+      <div class="feat reveal"><div class="glyph">✺</div><h3>Deposits, not maybes</h3><p>PaymeGPT payment links are generated mid-chat. Booked + paid in one conversation — the single biggest lever against no-shows.</p></div>
+      <div class="feat wide reveal">
+        <div>
+          <div class="glyph">⟡</div>
+          <h3>Every conversation, on the record</h3>
+          <p>Transcripts, booking outcomes, and deposit status flow into a simple dashboard. Know exactly which treatments people ask about — and what your AI converted this month.</p>
+        </div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.5;color:var(--pine);border-left:2px solid var(--gold);padding-left:28px;">
+          "She booked 11 consults the first weekend — including one at 1:40 AM with a paid deposit attached."
+          <div style="font-family:var(--sans);font-style:normal;font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-top:16px;opacity:.6">— Pilot clinic, Atlanta GA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2>Less than one no-show <em>per week.</em></h2>
+    </div>
+    <div class="price-grid">
+      <div class="price reveal">
+        <h3>Concierge</h3>
+        <div class="amount">$497<span>/mo</span></div>
+        <ul>
+          <li>AI video receptionist on your site</li>
+          <li>Trained on your treatment menu</li>
+          <li>Consult booking, 24/7</li>
+          <li>SMS confirmations</li>
+          <li>Monthly conversation report</li>
+        </ul>
+        <a href="#demo" class="btn btn-ghost">Start Here</a>
+      </div>
+      <div class="price hot reveal">
+        <span class="ribbon">Most Booked</span>
+        <h3 style="color:var(--ivory)">Front Desk+</h3>
+        <div class="amount">$897<span>/mo</span></div>
+        <ul>
+          <li>Everything in Concierge</li>
+          <li>Deposit collection via PaymeGPT</li>
+          <li>Live calendar sync</li>
+          <li>Smart escalation to your team</li>
+          <li>Spanish + 30 languages</li>
+          <li>Weekly conversion analytics</li>
+        </ul>
+        <a href="#demo" class="btn btn-gold">Book a Demo</a>
+      </div>
+      <div class="price reveal">
+        <h3>Empire</h3>
+        <div class="amount">Custom</div>
+        <ul>
+          <li>Multi-location deployment</li>
+          <li>Custom avatar &amp; voice cloning</li>
+          <li>Membership upsell flows</li>
+          <li>CRM / EMR integrations</li>
+          <li>Dedicated success manager</li>
+        </ul>
+        <a href="#demo" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width:860px">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Questions</span>
+      <h2>Asked &amp; <em>answered.</em></h2>
+    </div>
+    <div class="reveal">
+      <details><summary>Is this just a chatbot with a face?</summary><p>No — it's a real-time video agent that sees, hears, and responds in under a second, with tools wired into your actual booking calendar and payment system. It doesn't just talk about appointments; it makes them and collects money for them.</p></details>
+      <details><summary>What about medical questions and compliance?</summary><p>The agent is fenced to your approved treatment information and never gives medical advice. Anything clinical — complications, contraindications, prescriptions — escalates to your staff with a transcript. Conversations are handled with HIPAA-conscious workflows.</p></details>
+      <details><summary>How fast can we launch?</summary><p>Most spas are live in about 7 days: we ingest your treatment menu and FAQ, brand the avatar, connect your calendar and PaymeGPT account, and deploy to Cloudflare's edge.</p></details>
+      <details><summary>Does it replace my front desk team?</summary><p>It replaces the 2 AM silence and the on-hold hangups. Your team keeps doing what humans do best — in-person care — while the AI catches every inquiry they physically can't.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="final reveal">
+      <h2>Stop losing bookings to <em>voicemail.</em></h2>
+      <p>Talk to Ava right now. Ask her anything you'd ask a front desk — then imagine her working your website every night this year.</p>
+      <a href="#demo" class="btn btn-gold">Start the Conversation</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Velvette · AI Front Desk for Aesthetic Medicine</span>
+    <span>Built on TruGen · Cloudflare · PaymeGPT</span>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
